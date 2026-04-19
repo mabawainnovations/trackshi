@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trackshi – Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
+    h1 { color: #1B4332; }
+    h2 { color: #1B4332; margin-top: 2em; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 1.4em; }
+    footer { margin-top: 3em; font-size: 13px; color: #888; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p><strong>App:</strong> Trackshi<br/>
+<strong>Developer:</strong> Mabawa Innovations<br/>
+<strong>Last updated:</strong> April 19, 2026</p>
+
+<p>Trackshi is a personal finance app that automatically tracks your M-Pesa transactions by reading SMS messages on your device. We take your privacy seriously. This policy explains exactly what data we access, how we use it, and what we never do with it.</p>
+
+<h2>1. Data We Access</h2>
+
+<h3>SMS Messages</h3>
+<p>Trackshi requests permission to read and receive SMS messages (<code>READ_SMS</code>, <code>RECEIVE_SMS</code>). This is the core function of the app — we scan your inbox for M-Pesa transaction messages to automatically extract and record your financial activity.</p>
+<ul>
+  <li>We only process messages from known M-Pesa shortcodes (e.g. MPESA, M-PESA).</li>
+  <li>Non-financial SMS messages are ignored and never stored.</li>
+  <li>SMS content is processed entirely on your device. It is never uploaded to any server.</li>
+</ul>
+
+<h3>Biometric / Fingerprint</h3>
+<p>Trackshi requests <code>USE_BIOMETRIC</code> and <code>USE_FINGERPRINT</code> permissions to allow you to lock the app with your fingerprint or face unlock. Biometric data is handled entirely by the Android system — Trackshi never accesses or stores your biometric data directly.</p>
+
+<h3>Notifications</h3>
+<p>We request <code>POST_NOTIFICATIONS</code> permission to send you alerts when new transactions are detected in the background and when uncategorized transactions need your attention. You can disable notifications at any time in your device settings.</p>
+
+<h3>System Alert Window (Overlay)</h3>
+<p>We request <code>SYSTEM_ALERT_WINDOW</code> permission to display a real-time popup when a new M-Pesa transaction SMS is received, even when the app is in the background. This overlay lets you instantly categorize a transaction without opening the app. This permission is optional — the app works without it.</p>
+
+<h3>Background Processing</h3>
+<p>We use <code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, and <code>USE_EXACT_ALARM</code> permissions to run periodic background syncs that check for any M-Pesa SMS messages that may have been missed while the app was closed. This ensures your transaction history stays up to date.</p>
+
+<h2>2. Data Storage</h2>
+<p>All data — including your transaction history, categories, and merchant mappings — is stored locally on your device using an encrypted SQLite database. We do not operate any servers or cloud storage. Your financial data never leaves your phone.</p>
+
+<h2>3. Data We Do NOT Collect</h2>
+<ul>
+  <li>We do not collect your name, email address, or any personally identifiable information.</li>
+  <li>We do not transmit any data to external servers.</li>
+  <li>We do not use analytics, crash reporting, or advertising SDKs.</li>
+  <li>We do not share your data with any third parties.</li>
+</ul>
+
+<h2>4. Data Deletion</h2>
+<p>All app data is stored locally on your device. You can delete all data at any time by uninstalling the app, which removes the local database entirely.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>Trackshi is intended for users aged 18 and above. We do not knowingly collect data from children.</p>
+
+<h2>6. Changes to This Policy</h2>
+<p>If we make material changes to this privacy policy, we will update the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<h2>7. Contact</h2>
+<p>If you have any questions about this privacy policy, please contact us at:<br/>
+<strong>Email:</strong> privacy@mabawainnovations.com</p>
+
+<footer>
+  &copy; 2026 Mabawa Innovations. All rights reserved.
+</footer>
+
+</body>
+</html>
